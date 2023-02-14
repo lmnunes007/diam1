@@ -1,0 +1,91 @@
+* {
+/* padding and border are included in the size */
+  box-sizing: border-box;
+}
+
+body {
+	background-color: aliceblue;
+	color:  darkslategray;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 16px;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: auto;
+}
+
+#main-header {
+	background-color: darkslateblue;
+	color:  ivory;
+}
+
+nav {
+	background-color: darkslateblue;
+	color: ivory;
+}
+
+nav ul{
+	list-style: none;
+	padding: 0;
+}
+
+nav li{
+  /* Display horizontaly */
+	display: inline;
+	padding-right: 30px;
+}
+
+nav a{
+	text-decoration: none;
+	color:  ivory;
+}
+
+nav a:hover {
+	color: pink;
+}
+
+#banner {
+	padding: 40px 100px;
+	background-image: url("bluelight.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+.left-section{
+	float: left;
+	width: 70%;
+	padding-right: 15px;
+}
+
+.right-aside {
+	float: right;
+	width: 30%;
+	padding-left: 15px;
+	background-color: mediumslateblue;
+	color: ivory;
+	height: 600px;
+}
+
+footer {
+	clear: both;
+	background-color: darkslateblue;
+	text-align: center;
+	color: ivory;
+	padding: 15px 0px 15px 0px;
+	font-size: 16px;
+}
+
+@media(max-width: 600px) {
+	.left-section {
+		width: 100%;
+		float: none;
+	}
+	.right-aside {
+		width: 100%;
+		float: none;
+    background-color: deepskyblue;
+	}
+}
